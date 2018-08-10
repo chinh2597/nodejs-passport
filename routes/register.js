@@ -4,7 +4,7 @@ let router = express.Router();
 module.exports = function (passport) {
   router.get('/', function (req, res, next) {
     if (req.isAuthenticated()) {
-      res.redirect('/');
+      res.redirect('../');
     } else {
       res.render('register');
     }
